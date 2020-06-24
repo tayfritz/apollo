@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    /* background-image: url("images/stock6.jpg"); */
+}
+
+h1 {
+    size: 1em;
+    padding-bottom: 5;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    list-style: none;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
