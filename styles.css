@@ -21,12 +21,23 @@ nav li {
     list-style: none;
 }
 
-.welcome {
+.welcome,
+.form-container,
+.tips {
     text-align: center;
 }
 
 .form-container {
     display: flex;
-    text-align: center;
     justify-content: center;
+}
+
+.time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.calendar{
+    max-width: 60px;
 }
