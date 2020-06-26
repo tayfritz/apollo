@@ -19,11 +19,11 @@ nav a {
 
 nav li {
     list-style: none;
+    padding: 10px;
 }
 
 .welcome,
-.form-container,
-.tips {
+.form-container {
     text-align: center;
 }
 
@@ -32,12 +32,17 @@ nav li {
     justify-content: center;
 }
 
-.time {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.help {
+    text-align: center;  
 }
 
-.calendar{
-    max-width: 60px;
+.tips {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.calendar,
+.cash {
+    max-width: 160px;
+}
+
