@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    width: auto;
 }
 
 header {
@@ -10,7 +11,7 @@ header {
 
 h1 {
     size: 1em;
-    padding-bottom: 5;
+    padding-bottom: 5px;
 }
 
 nav a {
@@ -36,13 +37,32 @@ nav li {
     text-align: center;  
 }
 
-.tips {
+/* .tips {
     display: flex;
     flex-wrap: wrap;
-}
+    align-items: center;
+} */
 
 .calendar,
 .cash {
-    max-width: 160px;
+    max-width: 150px;
+    padding: 20px;
+    margin: 0;
 }
+
+.tips {
+    width: 70%;
+    
+}
+
+.col1,
+.col2 {
+    margin: 15px;
+    text-align: center;
+    border: dashed 2px cadetblue;
+    padding: 20px;
+}
+
+
+
 
