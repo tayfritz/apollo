@@ -23,25 +23,29 @@ nav li {
     padding: 10px;
 }
 
-.welcome,
-.form-container {
+.main-content {
+    width: 75%;
     text-align: center;
 }
 
+/* .welcome,
 .form-container {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+} */
+
+.form h2{
+    text-align: center;
 }
+
+.sign-up {
+    display: flex;
+    align-items: baseline;
+}
+
 
 .help {
     text-align: center;  
 }
-
-/* .tips {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-} */
 
 .calendar,
 .cash {
@@ -52,7 +56,7 @@ nav li {
 
 .tips {
     width: 70%;
-    
+
 }
 
 .col1,
