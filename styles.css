@@ -10,12 +10,16 @@ header {
 }
 
 h1 {
-    size: 1em;
+    size: 2em;
     padding-bottom: 5px;
 }
 
 nav a {
     text-decoration: none;
+    background-color: rgb(80, 119, 80);
+    color: white;
+    padding: 5px;
+    margin: 10px;
 }
 
 nav li {
@@ -24,22 +28,31 @@ nav li {
 }
 
 .main-content {
-    width: 75%;
     text-align: center;
+    padding: 40px;
 }
 
-/* .welcome,
-.form-container {
+.welcome,
+.help,
+.join h2 {
     text-align: center;
+    margin-top: 10px;
+}
+
+.form {
+    background-color: rgba(133, 197, 154, 0.397);
+    border-radius: 10%;
+    padding: 30px;
+}
+
+/* Flexbox on main-info form container*/
+/* .main-info {
+    display: flex;
+    align-content: flex-start;
 } */
 
-.form h2{
-    text-align: center;
-}
-
-.sign-up {
-    display: flex;
-    align-items: baseline;
+.main-info {
+    font-size: 1.5em;
 }
 
 
@@ -54,17 +67,19 @@ nav li {
     margin: 0;
 }
 
-.tips {
-    width: 70%;
-
-}
-
 .col1,
 .col2 {
     margin: 15px;
     text-align: center;
     border: dashed 2px cadetblue;
     padding: 20px;
+}
+
+.form label,
+.form select,
+.form input {
+    margin-bottom:30px;
+    margin-left: 20px;
 }
 
 
