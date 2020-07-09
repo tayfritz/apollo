@@ -26,6 +26,10 @@ header p {
     color: lightcoral;
 }
 
+nav ul {
+    padding: 0;
+}
+
 nav a {
     text-decoration: none;
     background-color: rgb(80, 119, 80);
