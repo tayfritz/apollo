@@ -1,17 +1,29 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    width: auto;
+}
+
+body{
+    margin: 0;
 }
 
 header {
+    width: 100%;
+    padding: 0;
     text-align: center;
-    /* background-image: url("images/stock6.jpg"); */
+    background: 
+                center no-repeat url("images/wedding.nosync/stock6.jpg");
 }
 
 h1 {
-    size: 2em;
-    padding-bottom: 5px;
+    size: 16em;
+    padding: 30px 0 10px 0;
+    color: lightcoral;
+}
+
+header p {
+    font: bold;
+    color: lightcoral;
 }
 
 nav a {
