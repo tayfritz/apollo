@@ -3,6 +3,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    background-color: rgb(241, 229, 213);
+}
+
 body{
     margin: 0;
 }
@@ -58,6 +62,9 @@ nav li {
 .form {
     background-color: rgba(133, 197, 154, 0.397);
     border-radius: 10%;
+    margin: 20px 30%;
+    width: 40%;
+    height: 40%;
     padding: 30px;
 }
 
