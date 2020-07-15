@@ -13,7 +13,7 @@ body {
 
 header {
     width: 100%;
-    padding: 0;
+    padding: 80px;
     text-align: center;
     background: linear-gradient(rgb(214, 189, 193), transparent 20%),
                 linear-gradient(0deg, rgb(241, 229, 213), transparent),
@@ -85,9 +85,9 @@ nav li {
     align-content: flex-start;
 } */
 
-.main-info {
+/* .main-info {
     font-size: 1.5em;
-}
+} */
 
 
 .help {
@@ -105,7 +105,7 @@ nav li {
 .col2 {
     margin: 15px;
     text-align: center;
-    border: dashed 2px cadetblue;
+    border: dashed 2px rgb(80, 119, 80);
     padding: 20px;
 }
 
@@ -114,6 +114,16 @@ nav li {
 .form input {
     margin-bottom:30px;
     margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.story-cards {
+    padding: 10px;
+}
+
+.couple1 {
+    max-width: 30%;
+    border-radius: 50%;
 }
 
 
