@@ -42,7 +42,6 @@ nav ul {
 
 nav li {
     list-style: none;
-    padding: 10px;
 }
 
 nav a {
@@ -68,7 +67,6 @@ h2 {
 .help,
 .testimonies {
     text-align: center;
-    margin-top: 10px;
     color: rgb(73, 71, 71);
     padding: 50px;
 }
