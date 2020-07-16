@@ -43,6 +43,13 @@ nav ul {
     flex-wrap: wrap;
 }
 
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
 nav a {
     text-decoration: none;
     background-color: rgb(80, 119, 80);
@@ -50,12 +57,6 @@ nav a {
     padding: 20px;
     margin: 20px;
     font-size: 1.3rem;
-}
-
-nav li {
-    /* display: inline-block; */
-    list-style: none;
-    padding: 10px;
 }
 
 /* .main-content {
