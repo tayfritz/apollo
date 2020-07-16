@@ -38,25 +38,21 @@ header p {
 
 nav ul {
     padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 nav li {
-    display: inline-block;
     list-style: none;
     padding: 10px;
-    margin-bottom: 40px;
 }
 
 nav a {
+    display: block;
     text-decoration: none;
     background-color: rgb(80, 119, 80);
     color: white;
-    padding: 20px;
-    margin: 20px;
-    font-size: 1.3rem;
+    padding: 15px;
+    margin: 25px;
+    font-size: 1.2rem;
 }
 
 /* .main-content {
@@ -184,11 +180,32 @@ footer {
 
 /* Media Queries */
 
-/* @media (min-width: 769px) {
+/* @media (min-width: 769px) {} */
     
-    .form  {
+    /* nav ul {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    nav li {
+        display: inline-block;
+        list-style: none;
+        padding: 10px;
+        margin-bottom: 40px;
+    } */
+
+
+    /* .form  {
     border-radius: 10%;
     width: 40%; 
-    } 
-
-} */
+    }  
+    
+    
+    nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 40px;
+}*/
