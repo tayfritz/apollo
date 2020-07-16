@@ -132,9 +132,21 @@ footer {
     background-color: rgb(80, 119, 80);
 }
 
+.quote-mark {
+    font-size: 10em;  /* 160px; 160px/16px = 10em */
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    color:  rgb(197, 181, 181);
+}
+
 .quotes {
+    max-width: 60%;
     font-size: 2em;
-    margin:0;
+    margin: auto;
+    padding: 0;
+    font-style: italic;
+    color: rgb(197, 181, 181);
 }
 
 .copywrite {
