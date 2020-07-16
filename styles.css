@@ -58,10 +58,10 @@ nav li {
     padding: 10px;
 }
 
-.main-content {
-    /* text-align: center; */
-    /* padding: 40px; */
-}
+/* .main-content {
+    text-align: center; 
+     padding: 40px; 
+} */
 
 h2 {
     font-size: 3.25em; /* 3.25em = 50px */
@@ -101,10 +101,10 @@ h2 {
     text-align: left;
 }
 
-.form input,
+/* .form input,
 .form select {
-    /* margin-left: 30px; */
-}
+    margin-left: 30px;
+} */
 
 /* Flexbox on main-info form container*/
 /* .main-info {
