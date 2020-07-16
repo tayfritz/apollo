@@ -59,6 +59,15 @@ nav a {
      padding: 40px; 
 } */
 
+.countdown {
+    text-align: center;
+}
+
+.countdown p {
+    display: inline-block;
+    font-size: 30px;
+}
+
 h2 {
     font-size: 3.25em; /* 3.25em = 50px */
 }
