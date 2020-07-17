@@ -17,7 +17,7 @@ header {
     text-align: center;
     background: linear-gradient(rgb(214, 189, 193), transparent 20%),
                 linear-gradient(0deg, rgb(241, 229, 213), transparent),
-                url("images/wedding.nosync/stock6.jpg")no-repeat center;
+                url("../images/wedding.nosync/stock6.jpg")no-repeat center;
     background-size: cover;
 }
 
