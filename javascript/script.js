@@ -1,4 +1,6 @@
 var countdownDate = new Date(prompt("When is your event?")).getTime(); 
+
+
 var myfunc = setInterval(function() {
     let now = new Date().getTime();
     let timeLeft = countdownDate - now;
@@ -13,12 +15,22 @@ var myfunc = setInterval(function() {
     document.getElementById("mins").innerHTML = "Minutes: " + minutes 
     document.getElementById("secs").innerHTML = "Seconds: " + seconds
 
-    if (timeLeft < 0) {
+
+    if (countdownDate === null) {
         clearInterval(myfunc);
-        document.getElementById("days").innerHTML = ""
-        document.getElementById("hours").innerHTML = "" 
-        document.getElementById("mins").innerHTML = ""
-        document.getElementById("secs").innerHTML = ""
-        document.getElementById("message").innerHTML = "Happy Wedding Day!";
+    } else {
+        if (timeLeft < .01) {
+            clearInterval(myfunc);
+            document.getElementById("days").innerHTML = ""
+            document.getElementById("hours").innerHTML = "" 
+            document.getElementById("mins").innerHTML = ""
+            document.getElementById("secs").innerHTML = ""
+        } 
     }
 }, 1000)
+
+
+
+// Add an additional message to the DOM when time runs out
+// } else if (timeLeft === 0) {
+    //     document.getElementById("message").innerHTML = "Happy Wedding Day!";
