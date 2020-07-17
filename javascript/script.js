@@ -1,4 +1,4 @@
-var countdownDate = new Date("July 31, 2020 11:59:59").getTime(); 
+var countdownDate = new Date(prompt("When is your event?")).getTime(); 
 var myfunc = setInterval(function() {
     let now = new Date().getTime();
     let timeLeft = countdownDate - now;
@@ -19,6 +19,6 @@ var myfunc = setInterval(function() {
         document.getElementById("hours").innerHTML = "" 
         document.getElementById("mins").innerHTML = ""
         document.getElementById("secs").innerHTML = ""
-        document.getElementById("message").innerHTML = "TIMES UP!!";
+        document.getElementById("message").innerHTML = "Happy Wedding Day!";
     }
 }, 1000)
