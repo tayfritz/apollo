@@ -1,5 +1,10 @@
 var countdownDate = new Date(prompt("When is your event?")).getTime(); 
+var timer = document.getElementById("timer");
 
+// This does not work...
+if (countdownDate === "null" || countdownDate === " ") {
+    timer.style.display = "block";
+}
 
 var myfunc = setInterval(function() {
     let now = new Date().getTime();
@@ -15,10 +20,12 @@ var myfunc = setInterval(function() {
     document.getElementById("mins").innerHTML = "Minutes: " + minutes 
     document.getElementById("secs").innerHTML = "Seconds: " + seconds
 
-
-    if (countdownDate === null) {
-        clearInterval(myfunc);
-    } else {
+// This does not work either...
+    // if (countdownDate === null) {
+    //     var countdown = document.getElementById("countdown");
+    //     countdown.style.display = "none";
+    //     clearInterval(myfunc);
+    // } else {}
         if (timeLeft < .01) {
             clearInterval(myfunc);
             document.getElementById("days").innerHTML = ""
@@ -26,8 +33,11 @@ var myfunc = setInterval(function() {
             document.getElementById("mins").innerHTML = ""
             document.getElementById("secs").innerHTML = ""
         } 
-    }
 }, 1000)
+
+
+
+
 
 
 
