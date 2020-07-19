@@ -1,10 +1,16 @@
 var countdownDate = new Date(prompt("When is your event?")).getTime(); 
 var timer = document.getElementById("timer");
+var hideTimer = document.getElementById("hide-timer");
+var banner = document.getElementById("banner-header");
+
+hideTimer.addEventListener("click", () => {
+    timer.style.display = "none";
+});
 
 // This does not work...
-if (countdownDate === "null" || countdownDate === " ") {
-    timer.style.display = "block";
-}
+// if (countdownDate === "null" || countdownDate === " ") {
+//     timer.style.display = "block";
+// }
 
 var myfunc = setInterval(function() {
     let now = new Date().getTime();

@@ -59,7 +59,7 @@ nav a {
      padding: 40px; 
 } */
 
-.countdown {
+#timer {
     text-align: center;
     font-size: 30px;
     background-color: rgb(51, 43, 66);
