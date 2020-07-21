@@ -12,15 +12,9 @@ let timerLocation = document.getElementsByTagName("main");
 if (countdownDate === null  || countdownDate == "") {
     timer.style.display = "none";
 }
-                // } else if (countdownDate.value === undefined) {
-                //     alert("You must provide a date or press 'cancel");
-
-                // }
-
-                // if (countdownDate === "") {
-                //     alert("You must provide a date or press 'cancel'");
-                // }
-
+// } else if (countdownDate == undefined) {
+//     alert("You must provide a date or press 'cancel'");
+// } 
 
 // Timer function will countdown time remaining from the user's input date from current day
 var myfunc = setInterval(function() {
@@ -47,13 +41,12 @@ var myfunc = setInterval(function() {
     } 
     
     if (timeLeft < 1) {
-        endTimerMessage.textContent = "HAPPY WEDDING DAY!";
+        bannerText.textContent = "HAPPY WEDDING DAY!";
         timer.appendChild(endTimerMessage);
         hideTimer.style.display = "none";
     }
 
 }, 1000)
-
 
 // Hide's timer div when user clicks on 'Hide Timer'
 hideTimer.addEventListener("click", () => {
