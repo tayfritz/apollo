@@ -57,10 +57,10 @@ nav a {
     font-size: 1.2rem;
 }
 
-/* .main-content {
-    text-align: center; 
-     padding: 40px; 
-} */
+    /* .main-content {
+        text-align: center; 
+        padding: 40px; 
+    } */
 
 #timer {
     text-align: center;
@@ -71,13 +71,13 @@ nav a {
     padding-bottom: 10px;
 }
 
-#hide-timer {
-    padding: 12px;
-    margin: 12px;
-    font-size: 25px;
-    background-color: rgb(218, 212, 212);
-    color: rgb(63, 60, 60);
-}
+    /* #hide-timer {
+        padding: 12px;
+        margin: 12px;
+        font-size: 25px;
+        background-color: rgb(218, 212, 212);
+        color: rgb(63, 60, 60);
+    } */
 
 .welcome h2,
 .help h2,
