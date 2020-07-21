@@ -3,6 +3,8 @@ var timer = document.getElementById("timer");
 var hideTimer = document.getElementById("hide-timer");
 var banner = document.getElementById("banner-header");
 
+
+// Hide's timer div when user clicks on 'Hide Timer'
 hideTimer.addEventListener("click", () => {
     timer.style.display = "none";
 });

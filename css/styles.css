@@ -87,23 +87,36 @@ h2 {
 .form {
     background-color: rgb(80, 119, 80);
     background-size: cover;
-    color: rgb(241, 229, 213);
     margin: auto;
     padding: 40px;
 }
 
 .join {
+    color: rgb(241, 229, 213);
     text-align: center;
 }
 
-.form label,
+/* .form label,
 .form select,
 .form input {
     margin-bottom:30px;
-    /* margin-left: 20px; */
-    text-transform: uppercase;
-    font-size: 40px;
+    margin-left: 20px;
+} */
+
+.form label {
+    font-size: 20px;
     text-align: left;
+    text-transform: uppercase;
+    color: rgb(210, 208, 206)
+}
+
+.form input,
+.form select {
+    font-size: 55px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    box-shadow: 0.5px 2px rgb(125, 115, 105);
+    color: rgb(73, 71, 71);
 }
 
 /* .form input,
@@ -112,10 +125,12 @@ h2 {
 } */
 
 /* Flexbox on main-info form container*/
-/* .main-info {
+.main-info {
     display: flex;
-    align-content: flex-start;
-} */
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
 
 /* .main-info {
     font-size: 1.5em;
