@@ -3,6 +3,8 @@ var countdownDate = new Date(prompt("When is your event?")).getTime();
 var timer = document.getElementById("timer");
 var hideTimer = document.getElementById("hide-timer");
 var banner = document.getElementById("banner-header");
+var bannerText = document.createElement("p");
+bannerText.textContent = "Time Remaining Untill Your Event:";
 let endTimerMessage = document.createElement("p");
 let timerLocation = document.getElementsByTagName("main");
 
@@ -30,6 +32,7 @@ var myfunc = setInterval(function() {
     let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
+    banner.appendChild(bannerText);
     document.getElementById("days").innerHTML = "Days: " + days
     document.getElementById("hours").innerHTML = "Hours: " + hours 
     document.getElementById("mins").innerHTML = "Minutes: " + minutes 
