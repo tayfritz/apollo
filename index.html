@@ -10,29 +10,36 @@
 
     <body>
         <header>
-            <h1>A BUSHEL AND A PECK</h1>
-            <p>Let us help you plan your sweet, simple, and perfect day</p>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">WHY WE EXIST</a></li>
-                    <li><a href="#">STORIES</a></li>
-                    <li><a href="#">MONEY SAVERS</a></li>
-                    <li><a href="#">TIME SAVERS</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <main class="main-content">
-            
             <!-- Countdown to User event date -->
             <div id="timer" class="countdown">
+                <form id="date-selector">
+                    <label for="event">WHEN IS YOUR EVENT?</label>
+                    <input type="date" id="event" name="date">
+                    <button id="hide-timer">Hide Timer</button>
+                </form>
+            
                 <p id="banner-header"></p>
                 <p id="days"></p>
                 <p id="hours"></p>
                 <p id="mins"></p>
                 <p id="secs"></p>
-                <button id="hide-timer">Hide Timer</button>
+             </div>
+
+            <div class="main-header">
+                <h1>A BUSHEL AND A PECK</h1>
+                <p>Let us help you plan your sweet, simple, and perfect day</p>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">WHY WE EXIST</a></li>
+                        <li><a href="#">STORIES</a></li>
+                        <li><a href="#">MONEY SAVERS</a></li>
+                        <li><a href="#">TIME SAVERS</a></li>
+                    </ul>
+                </nav>
             </div>
+        </header>
+    
+        <main class="main-content">
 
             <article class="welcome">
                 <h2>WE'RE GLAD YOU'RE HERE</h2>
@@ -154,7 +161,7 @@
         </footer>
 
         <!-- JavaScript -->
-            <script src="javascript/countdown.js"></script>
+            <script src="javascript/timer.js"></script>
             <script src="javascript/carousel.js"></script>
 
     </body>
