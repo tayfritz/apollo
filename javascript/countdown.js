@@ -3,7 +3,7 @@ var countdownDate = new Date(prompt("When is your event?")).getTime();
 var timer = document.getElementById("timer");
 var hideTimer = document.getElementById("hide-timer");
 var banner = document.getElementById("banner-header");
-
+let endTimerMessage = document.createElement("p");
 
 // Hide's timer div when user clicks on 'Hide Timer'
 hideTimer.addEventListener("click", () => {
@@ -30,20 +30,21 @@ var myfunc = setInterval(function() {
     document.getElementById("mins").innerHTML = "Minutes: " + minutes 
     document.getElementById("secs").innerHTML = "Seconds: " + seconds
 
-// This does not work either...
-    // if (countdownDate === null) {
-    //     var countdown = document.getElementById("countdown");
-    //     countdown.style.display = "none";
-    //     clearInterval(myfunc);
-    // } else {}
-        if (timeLeft < .01) {
-            clearInterval(myfunc);
-            document.getElementById("days").innerHTML = ""
-            document.getElementById("hours").innerHTML = "" 
-            document.getElementById("mins").innerHTML = ""
-            document.getElementById("secs").innerHTML = ""
-        } 
+    if (timeLeft < .1) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = "" 
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+    } 
+    
+    if (timeLeft < 1) {
+        endTimerMessage.textContent = "HAPPY WEDDING DAY!";
+        timer.appendChild(endTimerMessage);
+    }
+
 }, 1000)
+
 
 
 
