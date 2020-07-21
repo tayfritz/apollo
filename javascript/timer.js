@@ -1,1 +1,0 @@
-var userEventInput = flatpickr('#flatpickr');
