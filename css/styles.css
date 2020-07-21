@@ -68,20 +68,21 @@ nav a {
     padding-bottom: 10px;
 }
 
-h2 {
+.welcome h2,
+.help h2,
+.help h2,
+.testimonies h2 {
     font-size: 3.25em; /* 3.25em = 50px */
-    margin: 15px 0 15px;
-}
-
-.welcome,
-.help, {
+    margin: 20px 0 10px;
     text-align: center;
     color: rgb(73, 71, 71);
-    padding: 50px;
 }
 
+
 .welcome p {
+    text-align: center;
     font-size: 30px;
+    padding: 50px;
 }
 
 .form {
@@ -91,7 +92,9 @@ h2 {
     padding: 40px;
 }
 
-.join {
+.join h2 {
+    font-size: 3.25em; /* 3.25em = 50px */
+    margin: 20px 0 10px;
     color: rgb(241, 229, 213);
     text-align: center;
 }
@@ -165,12 +168,6 @@ h2 {
     border: dashed 2px rgb(80, 119, 80);
     padding: 30px;
 }
-
-.testimonies h2 {
-    text-align: center;
-    color: rgb(73, 71, 71);
-}
-
 
 .story-cards {
     padding: 10px;
