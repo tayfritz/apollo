@@ -4,16 +4,13 @@ var timer = document.getElementById("timer");
 var hideTimer = document.getElementById("hide-timer");
 var banner = document.getElementById("banner-header");
 let endTimerMessage = document.createElement("p");
-
-// Hide's timer div when user clicks on 'Hide Timer'
-hideTimer.addEventListener("click", () => {
-    timer.style.display = "none";
-});
+let timerLocation = document.getElementsByTagName("main");
 
 // This does not work...
 // if (countdownDate === "null" || countdownDate === " ") {
 //     timer.style.display = "block";
 // }
+
 
 // Timer function will countdown time remaining from the user's input date from current day
 var myfunc = setInterval(function() {
@@ -41,17 +38,13 @@ var myfunc = setInterval(function() {
     if (timeLeft < 1) {
         endTimerMessage.textContent = "HAPPY WEDDING DAY!";
         timer.appendChild(endTimerMessage);
+        // hideTimer.textContent = "Reset Timer";
     }
 
 }, 1000)
 
 
-
-
-
-
-
-
-// Add an additional message to the DOM when time runs out
-// } else if (timeLeft === 0) {
-    //     document.getElementById("message").innerHTML = "Happy Wedding Day!";
+// Hide's timer div when user clicks on 'Hide Timer'
+hideTimer.addEventListener("click", () => {
+    timer.style.display = "none";
+});
