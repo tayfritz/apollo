@@ -46,7 +46,7 @@ var myfunc = setInterval(function() {
     if (timeLeft < 1) {
         endTimerMessage.textContent = "HAPPY WEDDING DAY!";
         timer.appendChild(endTimerMessage);
-        // hideTimer.textContent = "Reset Timer";
+        hideTimer.style.display = "none";
     }
 
 }, 1000)
