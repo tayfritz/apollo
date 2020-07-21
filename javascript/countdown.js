@@ -9,9 +9,11 @@ let timerLocation = document.getElementsByTagName("main");
 // Conditional logic to prompt user to provide a date or to 'cancel' which will hide timer div
 if (countdownDate == null || countdownDate == " ") {
     timer.style.display = "none";
-} else if (countdownDate.value == undefined) {
-    alert("You must provide a date or press 'cancel");
 }
+                // } else if (countdownDate.value == undefined) {
+                //     alert("You must provide a date or press 'cancel");
+
+                // }
 
 
 // Timer function will countdown time remaining from the user's input date from current day
