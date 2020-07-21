@@ -1,3 +1,4 @@
+// Global variables
 var countdownDate = new Date(prompt("When is your event?")).getTime(); 
 var timer = document.getElementById("timer");
 var hideTimer = document.getElementById("hide-timer");
@@ -14,6 +15,7 @@ hideTimer.addEventListener("click", () => {
 //     timer.style.display = "block";
 // }
 
+// Timer function will countdown time remaining from the user's input date from current day
 var myfunc = setInterval(function() {
     let now = new Date().getTime();
     let timeLeft = countdownDate - now;
