@@ -70,6 +70,7 @@ nav a {
 
 h2 {
     font-size: 3.25em; /* 3.25em = 50px */
+    margin: 15px 0 15px;
 }
 
 .welcome,
@@ -103,27 +104,6 @@ h2 {
     margin-left: 20px;
 } */
 
-.form label {
-    font-size: 20px;
-    text-align: left;
-    text-transform: uppercase;
-    color: rgb(210, 208, 206)
-}
-
-.form input,
-.form select {
-    font-size: 55px;
-    border-top-left-radius: 3%;
-    border-top-right-radius: 3%;
-    box-shadow: 0.5px 2px rgb(125, 115, 105);
-    color: rgb(73, 71, 71);
-}
-
-/* .form input,
-.form select {
-    margin-left: 30px;
-} */
-
 /* Flexbox on main-info form container*/
 .main-info {
     display: flex;
@@ -132,10 +112,38 @@ h2 {
     align-content: center;
 }
 
-/* .main-info {
-    font-size: 1.5em;
-} */
+.sign-up {
+    text-align: center;
+}
 
+.sign-up button {
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgb(221, 146, 146);
+    color: rgb(73, 71, 71);
+    border: none;
+    box-shadow: 2px 2px rgb(77, 74, 74);
+    max-width: 30%;
+    margin-top: 20px;
+
+}
+
+.form label {
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(210, 208, 206);
+    margin-top: 20px;
+}
+
+.form input,
+.form select {
+    font-size: 55px;
+    border-radius: 5%;
+    box-shadow: 0.5px 2px rgb(125, 115, 105);
+    color: rgb(73, 71, 71);
+}
 
 .help {
     text-align: center;  
