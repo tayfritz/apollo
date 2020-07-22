@@ -94,6 +94,7 @@ nav a {
     text-align: center;
     font-size: 30px;
     padding: 50px;
+    color: rgb(73, 71, 71);
 }
 
 .form {
@@ -110,12 +111,6 @@ nav a {
     text-align: center;
 }
 
-/* .form label,
-.form select,
-.form input {
-    margin-bottom:30px;
-    margin-left: 20px;
-} */
 
 /* Flexbox on main-info form container*/
 .main-info {
@@ -178,6 +173,7 @@ nav a {
     text-align: center;
     border: dashed 2px rgb(80, 119, 80);
     padding: 30px;
+    color: rgb(73, 71, 71);
 }
 
 .story-cards {
@@ -278,6 +274,7 @@ footer {
     text-align: center;
     background-color: rgb(80, 119, 80);
     color:  rgb(197, 181, 181);
+    margin-bottom: 0;
 }
 
 .quote-mark {
@@ -293,7 +290,7 @@ footer {
     max-width: 60%;
     font-size: 2em;
     margin: auto;
-    padding: 0;
+    padding: 0 0 20px;
     font-style: italic;
 }
 
@@ -317,7 +314,9 @@ footer {
 }
 
 .copywrite {
-    margin-bottom: 0;
+    margin: 0;
+    font-size: 30px;
+    padding: 15px 0 20px;
 }
 
 
