@@ -297,6 +297,25 @@ footer {
     font-style: italic;
 }
 
+.social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.facebook2,
+.github,
+.linked-in {
+    max-width: 65px;
+    max-height: 60px;
+    margin: 12px;
+}
+
+.github {
+    filter: invert(100%);
+}
+
 .copywrite {
     margin-bottom: 0;
 }
