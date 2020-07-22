@@ -1,3 +1,5 @@
+
+
 // Global variables
 var countdownDate;
 var timer = document.getElementById("timer");
@@ -61,6 +63,9 @@ if (countdownDate === null  || countdownDate == "") {
 
 // Event Listeners
 // Hide's timer div when user clicks on 'Hide Timer'
-hideTimer.addEventListener("click", () => {
-    timer.style.display = "none";
-});
+// hideTimer.addEventListener("click", () => {
+//     timer.style.display = "none";
+// });
+
+
+console.log(flatpickr("#flatpickr", {}));
