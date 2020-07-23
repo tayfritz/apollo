@@ -75,11 +75,16 @@ nav a {
 .date,
 .hide-timer,
 #action-button {
-    padding: 12px;
-    margin: 12px;
+    padding: 15px;
+    margin: 15px;
     font-size: 25px;
     background-color: rgb(218, 212, 212);
     color: rgb(63, 60, 60);
+}
+
+.date,
+#action-button {
+    width: 60%;
 }
 
 .welcome h2,

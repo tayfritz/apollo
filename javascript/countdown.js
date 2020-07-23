@@ -1,5 +1,7 @@
 // Global variables
-flatpickr("#flatpickr", {});
+flatpickr("#flatpickr", {
+    disableMobile: "true",
+});
 
 var timer = document.getElementById("timer");
 var banner = document.getElementById("banner-header");
