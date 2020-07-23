@@ -12,8 +12,12 @@ hideTimer.textContent = "HIDE TIMER";
 
 // Event Listeners
 actionButton.addEventListener("click", () => {
-    eventDate = new Date(userInput.value).getTime();
-    getTimeRemaining();
+    if (userInput.value === undefined || userInput.value === null || userInput.value === "" ) {
+        banner.textContent = "Sorry, we didn't quite get that. Please select a date below to get time remaining until your event!";
+    } else {
+        eventDate = new Date(userInput.value).getTime();
+        getTimeRemaining();
+    }
 });
 
 hideTimer.addEventListener("click", () => {
