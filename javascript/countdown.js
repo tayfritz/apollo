@@ -1,35 +1,41 @@
-
-
 // Global variables
-var countdownDate;
-var timer = document.getElementById("timer");
-var hideTimer = document.getElementById("hide-timer");
-var banner = document.getElementById("banner-header");
-var bannerText = document.createElement("p");
-bannerText.textContent = "Time Remaining Untill Your Event:";
-let endTimerMessage = document.createElement("p");
-let timerLocation = document.getElementsByTagName("main");
+flatpickr("#flatpickr", {});
 
-// Functions
-function userInput(question) {
-    countdownDate = new Date(prompt(question)).getTime(); 
-}
+var timer = document.getElementById("timer");
+var banner = document.getElementById("banner-header");
+let actionButton = document.getElementById("action-button");
+const userInput = document.querySelector("#flatpickr");
+let eventDate;
+let hideTimer = document.createElement("button");
+hideTimer.textContent = "HIDE TIMER";
+
+actionButton.addEventListener("click", () => {
+    eventDate = new Date(userInput.value).getTime();
+    getTimeRemaining();
+});
+
+hideTimer.addEventListener("click", () => {
+    timer.style.display = "none";
+});
+
+// // Functions
 
 function getTimeRemaining() {
     var myfunc = setInterval(function() {
         let now = new Date().getTime();
-        let timeLeft = countdownDate- now;
+        let timeLeft = eventDate - now;
 
         let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
         let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-        banner.appendChild(bannerText);
+        banner.textContent = "TIME REMAINING UNTIL YOUR EVENT:"
         document.getElementById("days").innerHTML = "Days: " + days
         document.getElementById("hours").innerHTML = "Hours: " + hours 
         document.getElementById("mins").innerHTML = "Minutes: " + minutes 
         document.getElementById("secs").innerHTML = "Seconds: " + seconds
+        timer.appendChild(hideTimer);
 
         if (timeLeft < .1) {
             clearInterval(myfunc);
@@ -40,32 +46,23 @@ function getTimeRemaining() {
         } 
 
         if (timeLeft < 1) {
-            bannerText.textContent = "HAPPY WEDDING DAY!";
-            timer.appendChild(endTimerMessage);
+            banner.textContent = "HAPPY WEDDING DAY!";
+            userInput.style.display = "none";
+            actionButton.style.display = "none";
             hideTimer.style.display = "none";
         }
 
     }, 1000)
 }
 
-userInput("When is your event?");
 
-if (countdownDate === null  || countdownDate == "") {
-        timer.style.display = "none";
-} else if (isNaN(countdownDate)) {
-    userInput("Please provide a date or select 'Cancel'");
-    if (isNaN(userInput)) {
-        getTimeRemaining();
-    } 
-} else {
-    getTimeRemaining();
-}
+// // Event Listeners
 
-// Event Listeners
-// Hide's timer div when user clicks on 'Hide Timer'
-// hideTimer.addEventListener("click", () => {
-//     timer.style.display = "none";
+// // On click, 'Get Time Remaining' runs timer fuction
+// actionButton.addEventListener("click", () => {
+//   getTimeRemaining();
+
 // });
 
-
-console.log(flatpickr("#flatpickr", {}));
+// Button changes from 'Get Time Remaining' to 'Hide Timer'
+// timer.style.display = "none";
