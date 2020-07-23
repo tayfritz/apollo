@@ -1,6 +1,7 @@
 // Global variables
 flatpickr("#flatpickr", {
     disableMobile: "true",
+    enableTime: true,
 });
 
 var timer = document.getElementById("timer");
