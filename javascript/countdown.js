@@ -7,6 +7,7 @@ let actionButton = document.getElementById("action-button");
 const userInput = document.querySelector("#flatpickr");
 let eventDate;
 let hideTimer = document.createElement("button");
+hideTimer.className = "hide-timer";
 hideTimer.textContent = "HIDE TIMER";
 
 // Event Listeners
