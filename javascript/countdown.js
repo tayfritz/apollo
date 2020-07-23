@@ -9,6 +9,7 @@ let eventDate;
 let hideTimer = document.createElement("button");
 hideTimer.textContent = "HIDE TIMER";
 
+// Event Listeners
 actionButton.addEventListener("click", () => {
     eventDate = new Date(userInput.value).getTime();
     getTimeRemaining();
@@ -54,15 +55,3 @@ function getTimeRemaining() {
 
     }, 1000)
 }
-
-
-// // Event Listeners
-
-// // On click, 'Get Time Remaining' runs timer fuction
-// actionButton.addEventListener("click", () => {
-//   getTimeRemaining();
-
-// });
-
-// Button changes from 'Get Time Remaining' to 'Hide Timer'
-// timer.style.display = "none";
