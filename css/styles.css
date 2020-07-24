@@ -54,9 +54,9 @@ header p {
     background-color: rgba(240, 128, 128, 0.198);
 }
 
-.ham1,
-.ham2,
-.ham3 {
+#ham1,
+#ham2,
+#ham3 {
     max-width: 40px;
     padding: 2px 30px;
     background-color: rgb(80, 119, 80);
