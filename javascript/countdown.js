@@ -4,6 +4,7 @@ flatpickr("#flatpickr", {
     enableTime: true,
 });
 
+
 var timer = document.getElementById("timer");
 var banner = document.getElementById("banner-header");
 let actionButton = document.getElementById("action-button");
@@ -18,7 +19,7 @@ actionButton.addEventListener("click", () => {
     if (userInput.value === undefined || userInput.value === null || userInput.value === "" ) {
         banner.textContent = "Sorry, we didn't quite get that. Please select a date below to get time remaining until your event!";
     } else {
-        eventDate = new Date(userInput.value).getTime();
+        eventDate = moment(userInput.value);
         getTimeRemaining();
     }
 });
@@ -31,7 +32,7 @@ hideTimer.addEventListener("click", () => {
 
 function getTimeRemaining() {
     var myfunc = setInterval(function() {
-        let now = new Date().getTime();
+        let now = moment();
         let timeLeft = eventDate - now;
 
         let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
