@@ -382,7 +382,46 @@ footer {
     padding: 15px 0 20px;
 }
 
+@media(min-width: 768px) {
 
+    .hamburger {
+        display: none;
+    }
+
+    #expanded-nav {
+        display: inline-block;
+    }
+
+    nav a {
+       background-color: rgb(80, 119, 80);
+       color: white;
+       margin: 30px;
+    }
+
+    #expanded-nav ul {
+        background: none;
+    }
+
+}
+
+@media(min-width: 1056px) {
+
+
+    #expanded-nav {
+        display: block;
+    }
+
+    nav a {
+       background-color: rgb(80, 119, 80);
+       color: white;
+       margin: 30px;
+    }
+
+    #expanded-nav ul {
+        background: none;
+    }
+
+}
 
 /* Media Queries */
 /* 
