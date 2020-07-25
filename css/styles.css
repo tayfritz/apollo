@@ -106,21 +106,13 @@ nav a {
     font-weight: bold;
     color: white;
     padding: 15px;
-    margin: 12px;
+    margin: 12px 65px;
     font-size: 1.2rem;
 }
 
 #expanded-nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px 350px 15px 350px;
+    display: inline-block;
     background-color:  rgba(80, 119, 80, 0.438);
-}
-
-#expanded-nav li {
-    max-width: 60%; 
-    align-items: center;
 }
 
 /* Timer Styles - Mobile first approach */
@@ -393,83 +385,3 @@ footer {
 
 
 /* Media Queries */
-
-/* @media (min-width: 768px) {
-
-    #hamburger {
-        display: none;
-    }
-
-    #expanded-nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #expanded-nav li {
-        max-width: 60%; 
-        align-items: center;
-    }
-
-    #expanded-nav a {
-        background-color: rgb(80, 119, 80);
-    }
-
-}
-
-@media (max-width: 769px) {
-
-    #expanded-nav {
-        display: none;
-    }
-
-    .change {
-        display: inline-block;
-    };
-
-} */
-
-/* @media only screen and (max-width: 769px) {
-
-} */
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* nav ul {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    
-    nav li {
-        display: inline-block;
-        list-style: none;
-        padding: 10px;
-        margin-bottom: 40px;
-    } */
-
-
-    /* .form  {
-    border-radius: 10%;
-    width: 40%; 
-    }  
-    
-    
-    nav li {
-    display: inline-block;
-    list-style: none;
-    padding: 10px;
-    margin-bottom: 40px;
-}*/
