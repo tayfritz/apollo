@@ -385,3 +385,30 @@ footer {
 
 
 /* Media Queries */
+/* 
+@media(min-width: 768px) {
+
+    .hamburger {
+        display: none;
+    }
+
+}
+
+@media(min-width: 769px) {
+    
+     #expanded-nav {
+        display: inline-block;
+    }
+
+    nav a {
+       background-color: rgb(80, 119, 80);
+       color: white;
+       margin: 30px;
+    }
+
+    #expanded-nav ul {
+        background: none;
+    }
+    
+
+} */
