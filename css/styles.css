@@ -73,7 +73,6 @@ nav li {
 nav a {
     display: block;
     text-decoration: none;
-    /* background-color: rgb(80, 119, 80); */
     color: white;
     padding: 15px;
     margin: 25px;
@@ -353,8 +352,53 @@ footer {
 
 /* Media Queries */
 
-/* @media (min-width: 769px) {} */
+@media (min-width: 768px) {
+
+    #hamburger {
+        display: none;
+    }
+
+    #expanded-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #expanded-nav li {
+        max-width: 60%;
+        align-items: center;
+    }
+
+    #expanded-nav a {
+        background-color: rgb(80, 119, 80);
+    }
+
+}
+
+@media (max-width: 769px) {
+
+    #expanded-nav {
+        display: none;
+    }
+}
+
+/* @media only screen and (max-width: 769px) {
+
+} */
     
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* nav ul {
         padding: 0;
         display: flex;
