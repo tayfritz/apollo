@@ -407,18 +407,17 @@ footer {
 @media(min-width: 1056px) {
 
 
-    #expanded-nav {
-        display: block;
+    #expanded-nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
     }
 
     nav a {
        background-color: rgb(80, 119, 80);
        color: white;
        margin: 30px;
-    }
-
-    #expanded-nav ul {
-        background: none;
     }
 
 }
