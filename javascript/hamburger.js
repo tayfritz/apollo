@@ -4,15 +4,18 @@
 // let ham3 = document.getElementById("ham3");
 let hamburgerMenu = document.getElementById("hamburger");
 let expand = document.getElementById("expanded-nav");
-let mobileScreen = "769px";
+let windowSize = window.innerWidth;
 
-function onClickMenu() { 
+
+function onClickMenu() {
         document.getElementById("hamburger").classList.toggle("change");
         document.getElementById("expanded-nav").classList.toggle("exp");
         if (expand.style.display === "block") {
-            expand.style.display = "none";
+        expand.style.display = "none";
         } else {
-            expand.style.display = "block";
-        }
- }  
+        expand.style.display = "block";
+        } 
+}
+
+
 

@@ -406,7 +406,6 @@ footer {
 
 @media(min-width: 1056px) {
 
-
     #expanded-nav ul {
         display: flex;
         flex-direction: row;
