@@ -382,7 +382,11 @@ footer {
     padding: 15px 0 20px;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 769px) {
+
+    .change {
+        display: none;
+    }
 
     .hamburger {
         display: none;

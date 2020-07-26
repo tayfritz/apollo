@@ -4,16 +4,19 @@
 // let ham3 = document.getElementById("ham3");
 let hamburgerMenu = document.getElementById("hamburger");
 let expand = document.getElementById("expanded-nav");
-let windowSize = window.innerWidth;
+var useHam = window.matchMedia("(min-width: 768px)");
+let body = document.querySelector("body").width;
+
+
 
 
 function onClickMenu() {
         document.getElementById("hamburger").classList.toggle("change");
         document.getElementById("expanded-nav").classList.toggle("exp");
         if (expand.style.display === "block") {
-        expand.style.display = "none";
+                expand.style.display = "none";
         } else {
-        expand.style.display = "block";
+                expand.style.display = "block";
         } 
 }
 
