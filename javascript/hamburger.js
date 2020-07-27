@@ -10,15 +10,10 @@ let body = document.querySelector("body").width;
 
 
 
-function onClickMenu() {
-        document.getElementById("hamburger").classList.toggle("change");
-        document.getElementById("expanded-nav").classList.toggle("exp");
-        if (expand.style.display === "block") {
-                expand.style.display = "none";
-        } else {
-                expand.style.display = "block";
-        } 
-}
+hamburgerMenu.addEventListener("click", () => {
+        hamburgerMenu.classList.toggle("change");
+        expand.classList.toggle("exp");
+});
 
 
 

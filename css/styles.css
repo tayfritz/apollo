@@ -9,6 +9,7 @@
 
 body {
     margin: 0;
+    min-width: 400px;
 }
 
 header {
@@ -40,6 +41,15 @@ header p {
 }
 
 /* Navigation Styles - Mobile-first approach */
+nav a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    margin: 12px 65px;
+    font-size: 1.2rem;
+}
 
 .hamburger {
     display: inline-block;
@@ -47,8 +57,13 @@ header p {
     cursor: pointer;
 }
 
-#expanded-nav {
+/* nav {
     display: none;
+} */
+
+.exp ul {
+    display: inline-block;
+    background-color:  rgba(80, 119, 80, 0.438);
 }
 
 .hamburger:hover {
@@ -88,6 +103,7 @@ header p {
 }
 
 nav ul {
+    display: none;
     padding: 0;
 }
 
@@ -100,20 +116,6 @@ nav li:hover {
     text-decoration-style: double;
 }
 
-nav a {
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    padding: 15px;
-    margin: 12px 65px;
-    font-size: 1.2rem;
-}
-
-#expanded-nav ul {
-    display: inline-block;
-    background-color:  rgba(80, 119, 80, 0.438);
-}
 
 /* Timer Styles - Mobile first approach */
 
@@ -195,9 +197,8 @@ nav a {
     color: rgb(73, 71, 71);
     border: none;
     box-shadow: 2px 2px rgb(77, 74, 74);
-    max-width: 30%;
+    max-width: 100%;
     margin-top: 20px;
-
 }
 
 .form label {
@@ -214,6 +215,7 @@ nav a {
     border-radius: 5%;
     box-shadow: 0.5px 2px rgb(125, 115, 105);
     color: rgb(73, 71, 71);
+    max-width: 100%;
 }
 
 .help {
@@ -382,17 +384,17 @@ footer {
     padding: 15px 0 20px;
 }
 
+
+/* Media Queries */
+
 @media(min-width: 769px) {
 
-    .change {
-        display: none;
-    }
-
+    .change,
     .hamburger {
         display: none;
     }
 
-    #expanded-nav {
+    nav ul {
         display: inline-block;
     }
 
@@ -410,10 +412,10 @@ footer {
 
 @media(min-width: 1056px) {
 
-    #expanded-nav ul {
+    nav ul {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        justify-content: center;
         background: none;
     }
 
@@ -422,34 +424,4 @@ footer {
        color: white;
        margin: 30px;
     }
-
 }
-
-/* Media Queries */
-/* 
-@media(min-width: 768px) {
-
-    .hamburger {
-        display: none;
-    }
-
-}
-
-@media(min-width: 769px) {
-    
-     #expanded-nav {
-        display: inline-block;
-    }
-
-    nav a {
-       background-color: rgb(80, 119, 80);
-       color: white;
-       margin: 30px;
-    }
-
-    #expanded-nav ul {
-        background: none;
-    }
-    
-
-} */
