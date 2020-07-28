@@ -29,3 +29,13 @@ function onClick() {
     }
 }
 
+function checkEmail() {
+    let email = document.getElementById("user_email");
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+        return (true);
+    } else {
+        alert("Please provide a valid email address.");
+        return (false);
+    }
+}
+
