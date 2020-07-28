@@ -189,16 +189,15 @@ nav li:hover {
     text-align: center;
 }
 
-.sign-up button {
-    width: 100%;
-    padding: 20px;
+#press {
+    display: block;
+    padding: 30px;
     font-size: 30px;
     background-color: rgb(221, 146, 146);
     color: rgb(73, 71, 71);
     border: none;
     box-shadow: 2px 2px rgb(77, 74, 74);
-    max-width: 50%;
-    margin-top: 20px;
+    margin: auto;
 }
 
 .form label {
@@ -211,11 +210,16 @@ nav li:hover {
 
 .form input,
 .form select {
-    font-size: 55px;
-    border-radius: 5%;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 5px;
     box-shadow: 0.5px 2px rgb(125, 115, 105);
     color: rgb(73, 71, 71);
     max-width: 100%;
+}
+
+.form select {
+    margin-bottom: 25px;
 }
 
 .help {

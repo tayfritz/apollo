@@ -60,10 +60,10 @@
                         <h2>JOIN OUR COMMUNITY</h2>
                     </div>
                             
-                    <form class="sign-up" action="#" method="POST" onclick = "validate()">
+                    <form id="myForm" class="sign-up" action="#" method="POST">
                         <div class="main-info">
                             <label for="first_name">First name:</label>
-                            <input class="fname" type="text" id="first_name" name="first_name"><br>
+                            <input type="text" id="first_name" name="first_name"><br>
                             
                             <label class="lname" for="last_name">Last Name:</label>
                             <input type="text" id="last_name" name="last_name"><br>
@@ -82,8 +82,8 @@
                                 <option value="other">Other</option>
                             </select><br>
                         </div>
-                        <button type="submit" class="press">SIGN UP</button>
                     </form> 
+                    <button id="press" onclick="onClick()">SIGN UP</button>
                 </div>  
             </div> 
             
