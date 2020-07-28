@@ -441,6 +441,7 @@ footer {
         width: 40%;
         padding-right: 30px;
         border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
     }
 
     #timer {
