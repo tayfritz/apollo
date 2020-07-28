@@ -1,5 +1,3 @@
-const { isValid } = require("date-fns");
-
 let fname = document.getElementById("first_name");
 let lname = document.getElementById("last_name");
 let email = document.getElementById("user_email");
